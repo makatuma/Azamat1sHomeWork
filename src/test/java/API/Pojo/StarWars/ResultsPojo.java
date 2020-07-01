@@ -9,7 +9,7 @@ public class ResultsPojo {
 
     private String name;
     private String model;
-    private String manufactur
+    private String manufacturer;
     private String cost_in_credits;
     private String length;
     private String max_atmosphering_speed;
