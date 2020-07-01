@@ -40,6 +40,11 @@ public class StarWarsSer {
 
         System.out.println(starWarsPojoDes.getNext());
 
+
+         for(int i=0; i<starWarsPojoDes.getResults().size(); i++){
+             System.out.println(starWarsPojoDes.getResults().get(i).getName());
+             System.out.println(starWarsPojoDes.getResults().get(i).getCost_in_credits());
+         }
     }
 
 
