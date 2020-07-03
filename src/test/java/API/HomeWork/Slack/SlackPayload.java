@@ -1,4 +1,4 @@
-package API.HomeWork;
+package API.HomeWork.Slack;
 
 public class SlackPayload {
 

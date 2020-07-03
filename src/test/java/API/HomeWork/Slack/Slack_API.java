@@ -1,9 +1,7 @@
-package API.HomeWork;
+package API.HomeWork.Slack;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.it.Ma;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -18,18 +16,15 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
-import static API.HomeWork.SlackPayload.getSlackPayload;
+import static API.HomeWork.Slack.SlackPayload.getSlackPayload;
 
 public class Slack_API {
     public  static  String message;

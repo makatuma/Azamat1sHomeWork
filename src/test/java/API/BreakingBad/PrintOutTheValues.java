@@ -45,9 +45,13 @@ public class PrintOutTheValues {
 
 
 
-            System.out.println(breakingPojos.get(0).getStatus());
-            System.out.println(breakingPojos.get(0).getCategory());
-            System.out.println(breakingPojos.get(0).getPortrayed());
+        System.out.println(String.format("\nStatus---> %s \nCategory---> %s \nPortrayed---> %s",breakingPojos.get(0).getStatus(),breakingPojos.get(0).getCategory(),breakingPojos.get(0).getPortrayed()));
+
+        System.out.println(breakingPojos.get(0).getStatus());
+        System.out.println(breakingPojos.get(0).getCategory());
+        System.out.println(breakingPojos.get(0).getPortrayed());
+
+
 
         }
 

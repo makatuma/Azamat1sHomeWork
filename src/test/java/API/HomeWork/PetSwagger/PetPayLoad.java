@@ -1,4 +1,4 @@
-package API.HomeWork;
+package API.HomeWork.PetSwagger;
 
 import com.github.javafaker.Faker;
 

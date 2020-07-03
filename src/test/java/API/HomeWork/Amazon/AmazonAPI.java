@@ -1,4 +1,4 @@
-package API.HomeWork;
+package API.HomeWork.Amazon;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;

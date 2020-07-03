@@ -24,7 +24,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
 
-import static API.HomeWork.SlackPayload.getSlackPayload;
+import static API.HomeWork.Slack.SlackPayload.getSlackPayload;
 
 public class Slack_Steps {
 
