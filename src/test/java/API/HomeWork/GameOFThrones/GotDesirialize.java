@@ -10,10 +10,12 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.junit.Test;
 
+import javax.imageio.stream.ImageInputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.*;
 
-public class GotSerialize {
+public class GotDesirialize {
 
     @Test
     public void countGender() throws URISyntaxException, IOException {
@@ -44,6 +46,7 @@ public class GotSerialize {
         int countOfFemale = 0;
 
 
+        Map<String, Integer> numberOfMandW = new HashMap<>();
 
 
 
@@ -67,12 +70,14 @@ for(int i=0; i<gotPojoDes.getData().size(); i++){
     }
 
 
-
-
 }
+numberOfMandW.put("males", countOfMale);
+numberOfMandW.put("females", countOfFemale);
 
-        System.out.println("Sum of females: "+countOfFemale);
-        System.out.println("Sum of males: "+countOfMale);
+        System.out.println("Sum of females: "+numberOfMandW.get("females"));
+        System.out.println("Sum of males: "+numberOfMandW.get("males"));
+
+
     }
 
 
@@ -100,22 +105,25 @@ for(int i=0; i<gotPojoDes.getData().size(); i++){
 
         GOTPojo gotPojoDes = objectMapper.readValue(httpResponse.getEntity().getContent(), GOTPojo.class);
 
-        int count =0;
-        String strBooks = "";
+     List <String>  listOfbookNames = new ArrayList<>();
+     Set<String>    setOfBooks = new HashSet<>();
+
+     int count =0;
+     int numOfChars = 0;
 
 
 
-            for (int k = 0; k < gotPojoDes.getData().size(); k++) {
 
-                strBooks = gotPojoDes.getData().get(k).getBooks().toString();
 
-                System.out.println(strBooks);
-                if (strBooks.contains(gotPojoDes.getData().get(k).getBooks().toString())) {
-                    count++;
+        for(int i=0; i<gotPojoDes.getData().size(); i++){
+numOfChars++;
+                for( int k=0; k<gotPojoDes.getData().get(i).getBooks().size(); k++){
+
+                    setOfBooks.add(gotPojoDes.getData().get(i).getBooks().get(k));
+                    listOfbookNames.add(gotPojoDes.getData().get(i).getBooks().get(k));
+
                 }
-        }
+                }
 
-
-        System.out.println(count);
     }
     }
