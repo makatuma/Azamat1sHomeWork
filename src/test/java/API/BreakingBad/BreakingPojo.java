@@ -21,6 +21,70 @@ public class BreakingPojo {
     private String name;
     private String birthday;
     private String status;
+    private List<String> occupation;
+    private String img;
+    private String nickname;
+    private List<String> appearance;
+    private String portrayed;
+    private String category;
+    private  List<Object> better_call_saul_appearance;
+
+
+    public List<String> getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(List<String> occupation) {
+        this.occupation = occupation;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public List<String> getAppearance() {
+        return appearance;
+    }
+
+    public void setAppearance(List<String> appearance) {
+        this.appearance = appearance;
+    }
+
+    public String getPortrayed() {
+        return portrayed;
+    }
+
+    public void setPortrayed(String portrayed) {
+        this.portrayed = portrayed;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public List<Object> getBetter_call_saul_appearance() {
+        return better_call_saul_appearance;
+    }
+
+    public void setBetter_call_saul_appearance(List<Object> better_call_saul_appearance) {
+        this.better_call_saul_appearance = better_call_saul_appearance;
+    }
 
     public String getStatus() {
         return status;

@@ -1,4 +1,8 @@
-package API.Pojo.ReqresIn;
+package API.RestAssured;
+
+import API.Pojo.ReqresIn.Ad;
+import API.Pojo.ReqresIn.Data;
+import org.junit.Test;
 
 public class ReqresPojo {
 
